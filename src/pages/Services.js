@@ -19,22 +19,25 @@ const boxItems = [
   {
     title: "Import & Export",
     description:
-      "We are specialized in import and export of high-quality silica. With a focus on quality, reliability, and customer satisfaction, we cater to the needs of businesses worldwide, providing top-notch silica products for diverse applications.",
-    detailedDescription: "",
+      "Discover the world of superior silica exports with us. As a leading exporter, we pride ourselves on delivering top-notch silica products tailored to meet your specific industrial requirements. Our extensive range of high-purity silica is sourced from reputable suppliers, ensuring consistent quality and reliability in every shipment.",
+    detailedDescription:
+      "At our core, we prioritize customer satisfaction and strive to exceed expectations with every interaction. Whether you require silica for glass production, foundry molds, or other industrial applications, we have the expertise and resources to fulfill your needs.",
     IconComponent: ImportExportSharp,
   },
   {
     title: "Global shipping",
     description:
       "Our global shipping facility ensures efficient and reliable delivery of our silica products to customers worldwide. With a strong network of logistics partners, we guarantee timely and secure transportation, allowing us to reach markets across the globe. ",
-    detailedDescription: "",
+    detailedDescription:
+      "Our expert team manages all aspects of shipping, from documentation to customs clearance, providing a hassle-free experience. Whether you need bulk shipments or specialized packaging, we offer flexible solutions tailored to your needs. Partner with us for reliable and convenient global shipping of your silica products.",
     IconComponent: PublicSharp,
   },
   {
     title: "Trading consultancy",
     description:
       "Our consultancy offers expert guidance and strategic advice to businesses looking to navigate the complexities trade. Whether you're entering new markets or seeking to streamline your trading processes, our consultancy services are designed to help you succeed in today's competitive economy.",
-    detailedDescription: "",
+    detailedDescription:
+      "We offer personalized consultancy services designed to meet your specific investment goals and risk tolerance.Our consultancy services encompass a wide range of areas, including stock selection, portfolio diversification, risk management, and market analysis. We leverage cutting-edge tools and technologies to provide you with timely and actionable advice, helping you make informed decisions in today's fast-paced markets.",
     IconComponent: ShowChartSharp,
   },
 ];
@@ -85,6 +88,7 @@ const OurServices = () => {
             <ServicesBox
               title={item.title}
               description={item.description}
+              detailedDescription={item.detailedDescription}
               IconComponent={item.IconComponent}
               key={i}
             />
