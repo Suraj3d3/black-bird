@@ -21,6 +21,14 @@ import {
 const theme = createTheme();
 
 const Footer = () => {
+  const FooterNavItems = [
+    { title: "Home", id: "#home" },
+    { title: "Services", id: "#services" },
+    { title: "Our locations", id: "#locations" },
+    { title: "contact us", id: "#contactus" },
+    { title: "Credits", id: "#credits" },
+  ];
+
   return (
     <ThemeProvider theme={theme}>
       <Box
@@ -61,34 +69,30 @@ const Footer = () => {
             123-456-7890
           </Typography>
         </Box>
+
+        {/* Navigation Box */}
         <Box sx={{ textAlign: "center" }}>
           <Typography
             variant="h6"
             sx={{ fontWeight: "bold", marginBottom: "10px" }}
           >
-            Services
+            Navigate
           </Typography>
-          <Link
-            href="#"
-            color="inherit"
-            sx={{ display: "block", marginBottom: "5px" }}
-          >
-            Service 1
-          </Link>
-          <Link
-            href="#"
-            color="inherit"
-            sx={{ display: "block", marginBottom: "5px" }}
-          >
-            Service 2
-          </Link>
-          <Link
-            href="#"
-            color="inherit"
-            sx={{ display: "block", marginBottom: "5px" }}
-          >
-            Service 3
-          </Link>
+
+          {/* Generate footer navigation item */}
+          {FooterNavItems.map((item) => (
+            <Link
+              href={item.id}
+              color="inherit"
+              sx={{
+                display: "block",
+                marginBottom: "5px",
+                textDecoration: "none",
+              }}
+            >
+              {item.title}
+            </Link>
+          ))}
         </Box>
         <Box
           sx={{

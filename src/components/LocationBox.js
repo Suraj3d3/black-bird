@@ -27,7 +27,6 @@ function LocationBox({ officeType, address, contact }) {
             "transform 0.3s ease-in-out, background-color 0.3s ease-in-out",
           "&:hover": {
             transform: "scale(1.05)",
-            // backgroundColor: "#f0f0f0", // Add a slight color change on hover
             backgroundColor: "#2C3335",
             color: "#f7f1e3",
           },

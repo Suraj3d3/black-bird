@@ -106,20 +106,24 @@ const Home = () => {
           sx={{
             fontSize: isMobile ? "1rem" : "1.5rem",
             marginBottom: isMobile ? "20px" : "40px",
+            fontFamily: "Poppins, sans-serif",
+            fontWeight: 400,
+            fontStyle: "normal",
+            color: "#2C3335",
           }}
         >
           Empowering Your Global Trade Success, from Export to Expansion
         </Typography>
         <Button
           variant="contained"
+          href="#contactus"
           sx={{
             fontSize: isMobile ? "1rem" : "1.2rem",
             borderRadius: "30px",
             backgroundColor: "#2C3335",
-            ":hover": {
+            "&:hover": {
               backgroundColor: "transparent",
               color: "#2C3335",
-              borderColor: "#2C3335",
             },
           }}
         >

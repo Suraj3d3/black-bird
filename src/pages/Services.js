@@ -18,17 +18,23 @@ import ServicesBox from "../components/ServiceBox";
 const boxItems = [
   {
     title: "Import & Export",
-    description: "",
+    description:
+      "We are specialized in import and export of high-quality silica. With a focus on quality, reliability, and customer satisfaction, we cater to the needs of businesses worldwide, providing top-notch silica products for diverse applications.",
+    detailedDescription: "",
     IconComponent: ImportExportSharp,
   },
   {
     title: "Global shipping",
-    description: "",
+    description:
+      "Our global shipping facility ensures efficient and reliable delivery of our silica products to customers worldwide. With a strong network of logistics partners, we guarantee timely and secure transportation, allowing us to reach markets across the globe. ",
+    detailedDescription: "",
     IconComponent: PublicSharp,
   },
   {
     title: "Trading consultancy",
-    description: "",
+    description:
+      "Our consultancy offers expert guidance and strategic advice to businesses looking to navigate the complexities trade. Whether you're entering new markets or seeking to streamline your trading processes, our consultancy services are designed to help you succeed in today's competitive economy.",
+    detailedDescription: "",
     IconComponent: ShowChartSharp,
   },
 ];

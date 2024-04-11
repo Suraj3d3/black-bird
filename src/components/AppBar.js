@@ -1,140 +1,3 @@
-// import * as React from "react";
-// import AppBar from "@mui/material/AppBar";
-// import Box from "@mui/material/Box";
-// import Toolbar from "@mui/material/Toolbar";
-// import IconButton from "@mui/material/IconButton";
-// import Typography from "@mui/material/Typography";
-// import Menu from "@mui/material/Menu";
-// import MenuIcon from "@mui/icons-material/Menu";
-// import Container from "@mui/material/Container";
-// import Button from "@mui/material/Button";
-// import MenuItem from "@mui/material/MenuItem";
-// import AirportShuttleIcon from "@mui/icons-material/AirportShuttle";
-
-// const pages = ["Services", "About us", "Get in touch"];
-
-// function ResponsiveAppBar() {
-//   const [anchorElNav, setAnchorElNav] = React.useState(null);
-//   const [anchorElUser, setAnchorElUser] = React.useState(null);
-
-//   const handleOpenNavMenu = (event) => {
-//     setAnchorElNav(event.currentTarget);
-//   };
-
-//   const handleCloseNavMenu = () => {
-//     setAnchorElNav(null);
-//   };
-
-//   const preventDefault = (event) => event.preventDefault();
-
-//   return (
-//     <AppBar
-//       position="fixed"
-//       sx={{ backgroundColor: "#2C3335" }}
-//       onClick={preventDefault}
-//     >
-//       <Container maxWidth="xl">
-//         <Toolbar disableGutters>
-//           <AirportShuttleIcon
-//             sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
-//           />
-//           <Typography
-//             variant="h6"
-//             noWrap
-//             component="a"
-//             href="#app-bar-with-responsive-menu"
-//             sx={{
-//               mr: 12,
-//               display: { xs: "none", md: "flex" },
-//               fontFamily: "sans-serif",
-//               fontWeight: 700,
-//               // letterSpacing: ".1rem",
-//               color: "inherit",
-//               textDecoration: "none",
-//             }}
-//           >
-//             Black Bird
-//           </Typography>
-
-//           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-//             <IconButton
-//               size="large"
-//               aria-label="account of current user"
-//               aria-controls="menu-appbar"
-//               aria-haspopup="true"
-//               onClick={handleOpenNavMenu}
-//               color="inherit"
-//             >
-//               <MenuIcon />
-//             </IconButton>
-//             <Menu
-//               id="menu-appbar"
-//               anchorEl={anchorElNav}
-//               anchorOrigin={{
-//                 vertical: "bottom",
-//                 horizontal: "left",
-//               }}
-//               keepMounted
-//               transformOrigin={{
-//                 vertical: "top",
-//                 horizontal: "left",
-//               }}
-//               open={Boolean(anchorElNav)}
-//               onClose={handleCloseNavMenu}
-//               sx={{
-//                 display: { xs: "block", md: "none" },
-//               }}
-//             >
-//               {pages.map((page) => (
-//                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-//                   <Typography textAlign="center">{page} </Typography>
-//                 </MenuItem>
-//               ))}
-//             </Menu>
-//           </Box>
-
-//           <AirportShuttleIcon
-//             sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
-//           />
-//           <Typography
-//             variant="h5"
-//             noWrap
-//             component="a"
-//             href="#app-bar-with-responsive-menu"
-//             sx={{
-//               mr: 2,
-//               display: { xs: "flex", md: "none" },
-//               flexGrow: 1,
-//               fontFamily: "monospace",
-//               fontWeight: 700,
-//               letterSpacing: ".3rem",
-//               color: "inherit",
-//               textDecoration: "none",
-//             }}
-//           >
-//             BLACK BIRD
-//           </Typography>
-//           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-//             {pages.map((page) => (
-//               <Button
-//                 key={page}
-//                 onClick={handleCloseNavMenu}
-//                 sx={{ my: 2, color: "white", display: "block" }}
-//               >
-//                 {page}
-//               </Button>
-//             ))}
-//             <MenuItem>
-//               <Typography href="#services">service</Typography>
-//             </MenuItem>
-//           </Box>
-//         </Toolbar>
-//       </Container>
-//     </AppBar>
-//   );
-// }
-// export default ResponsiveAppBar;
-
 import * as React from "react";
 import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
@@ -171,17 +34,20 @@ function DrawerAppBar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
+      <Typography variant="h6" sx={{ my: 2, color: "#2C3335" }}>
         BLACK BIRD- Mobile
       </Typography>
       <Divider />
       <List>
         {navItems.map((item) => (
           <ListItem key={item.title} disablePadding>
-            {/* <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item.title}/>
-            </ListItemButton> */}
-            <Button key={item} href={item.id} sx={{ color: "#000" }}>
+            <Button
+              key={item}
+              href={item.id}
+              sx={{
+                color: "#2C3335",
+              }}
+            >
               {item.title}
             </Button>
           </ListItem>
@@ -247,12 +113,12 @@ function DrawerAppBar(props) {
   );
 }
 
-DrawerAppBar.propTypes = {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
-  window: PropTypes.func,
-};
+// DrawerAppBar.propTypes = {
+//   /**
+//    * Injected by the documentation to work in an iframe.
+//    * You won't need it on your project.
+//    */
+//   window: PropTypes.func,
+// };
 
 export default DrawerAppBar;
