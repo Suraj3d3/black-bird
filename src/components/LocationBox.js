@@ -14,14 +14,14 @@ function LocationBox({ officeType, address, contact }) {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <Grid item xs={12} sm={6}>
+    <Grid item xs={12} sm={4}>
       <Paper
         elevation={3}
         sx={{
           padding: "20px",
           textAlign: "center",
           borderRadius: "10px",
-          minHeight: "280px",
+          minHeight: "240px",
           boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
           transition:
             "transform 0.3s ease-in-out, background-color 0.3s ease-in-out",
@@ -46,7 +46,7 @@ function LocationBox({ officeType, address, contact }) {
           {address}
         </Typography>
 
-        <CallIcon sx={{ marginTop: "10px" }} />
+        {/* <CallIcon sx={{ marginTop: "10px" }} />
         <Typography
           variant="body1"
           sx={{
@@ -54,7 +54,7 @@ function LocationBox({ officeType, address, contact }) {
           }}
         >
           {contact}
-        </Typography>
+        </Typography> */}
       </Paper>
     </Grid>
   );

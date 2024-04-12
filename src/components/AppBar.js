@@ -34,9 +34,16 @@ function DrawerAppBar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2, color: "#2C3335" }}>
+      {/* <Typography variant="h6" sx={{ my: 2, color: "#2C3335" }}>
         BLACK BIRD- Mobile
-      </Typography>
+      </Typography> */}
+
+      {/* Mobile Navigation logo */}
+      <img
+        src="./assets/logo.jpg"
+        alt="Black Bird - Mobile"
+        style={{ height: 35, width: 130 }}
+      />
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -73,13 +80,25 @@ function DrawerAppBar(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography
+          {/* <Typography
             variant="h6"
             component="div"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
             BLACK BIRD - Desktop
-          </Typography>
+          </Typography> */}
+
+          {/* Desktop Navigation logo */}
+          <Box
+            component="div"
+            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+          >
+            <img
+              src="./assets/logo.jpg"
+              alt="Black Bird - Desktop"
+              style={{ height: 32, width: 130 }}
+            />
+          </Box>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
               <Button key={item} href={item.id} sx={{ color: "#fff" }}>

@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
+import { contactUsInfo } from "../utils/info";
 
 const theme = createTheme();
 
@@ -88,7 +89,8 @@ const ContactUS = () => {
                 </Typography>
               </Box>
               <Typography variant="body1" style={{ textAlign: "center" }}>
-                +1234567890
+                {contactUsInfo.CONTACT_US_NAME} <br />
+                {contactUsInfo.CONTACT_US_PHONE}
               </Typography>
             </Box>
             {/* Email Us */}

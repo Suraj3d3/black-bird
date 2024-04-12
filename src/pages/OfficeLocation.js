@@ -9,22 +9,9 @@ import {
 } from "@mui/material";
 
 import LocationBox from "../components/LocationBox";
+import { locationsInfo } from "../utils/info";
 
 const OfficeComponent = () => {
-  const locations = [
-    {
-      officeType: "Head Office",
-      address: "Holding No:04, Cross Road No 17, Mango, Jamshedpur",
-      contact: "123-456-7890",
-    },
-    {
-      officeType: "Branch Office",
-      address:
-        "Ground Floor, D-9, Desk No 45, Noida, Sector 3, Noida, Gautambuddha Nagar, Uttar Pradesh, 201301",
-      contact: "123-456-7890",
-    },
-  ];
-
   const theme = createTheme(); // Create a default theme
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
@@ -60,7 +47,7 @@ const OfficeComponent = () => {
           Discover Our Locations
         </Typography>
         <Grid container spacing={4} justifyContent="center">
-          {locations.map((location) => {
+          {locationsInfo.map((location) => {
             return (
               <LocationBox
                 officeType={location.officeType}

@@ -78,7 +78,7 @@ const Home = () => {
           sx={{
             marginBottom: isMobile ? "10px" : "20px",
             color: "#2f3542",
-            textShadow: "2px 2px 4px rgba(0, 0, 0, 0.3)",
+            textShadow: "4px 4px 4px rgba(0, 0, 0, 0.3)",
             overflow: "hidden",
             whiteSpace: "nowrap",
             fontFamily: "Playfair Display,Oswald, sans-serif",

@@ -17,6 +17,7 @@ import {
   Email,
   LocationOn,
 } from "@mui/icons-material";
+import { footerInfo } from "../utils/info";
 
 const theme = createTheme();
 
@@ -50,23 +51,28 @@ const Footer = () => {
         }}
       >
         <Box sx={{ textAlign: "left" }}>
-          <Typography
+          {/* <Typography
             variant="h4"
             sx={{ fontWeight: "bold", marginBottom: "10px" }}
           >
             Black Bird
-          </Typography>
+          </Typography> */}
+          <img
+            src="./assets/logo.jpg"
+            alt="Black Bird "
+            style={{ height: 45, width: 160 }}
+          />
           <Typography variant="body1" sx={{ marginBottom: "10px" }}>
-            <LocationOn sx={{ marginRight: "5px" }} />
-            Holding No:04, Cross Road No 17, Mango, Jamshedpur, India
+            {/* <LocationOn sx={{ marginRight: "5px" }} /> */}
+            {footerInfo.FOOTER_ADDRESS}
           </Typography>
           <Typography variant="body1" sx={{ marginBottom: "10px" }}>
             <Email sx={{ marginRight: "5px" }} />
-            support@blackbird.com
+            {footerInfo.FOOTER_EMAIL}
           </Typography>
           <Typography variant="body1">
             <Phone sx={{ marginRight: "5px" }} />
-            123-456-7890
+            {footerInfo.FOOTER_PHONE}
           </Typography>
         </Box>
 
@@ -110,28 +116,28 @@ const Footer = () => {
           </Typography>
           <Grid container spacing={2} justifyContent="center">
             <Grid item>
-              <Link href="#" color="inherit">
+              <Link href={footerInfo.FOOTER_FB} color="inherit">
                 <IconButton sx={{ color: "#fff" }}>
                   <Facebook />
                 </IconButton>
               </Link>
             </Grid>
             <Grid item>
-              <Link href="#" color="inherit">
+              <Link href={footerInfo.FOOTER_TWITTER} color="inherit">
                 <IconButton sx={{ color: "#fff" }}>
                   <Twitter />
                 </IconButton>
               </Link>
             </Grid>
             <Grid item>
-              <Link href="#" color="inherit">
+              <Link href={footerInfo.FOOTER_INSTA} color="inherit">
                 <IconButton sx={{ color: "#fff" }}>
                   <Instagram />
                 </IconButton>
               </Link>
             </Grid>
             <Grid item>
-              <Link href="#" color="inherit">
+              <Link href={footerInfo.FOOTER_LINKEDIN} color="inherit">
                 <IconButton sx={{ color: "#fff" }}>
                   <LinkedIn />
                 </IconButton>

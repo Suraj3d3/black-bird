@@ -27,7 +27,7 @@ const boxItems = [
   {
     title: "Global shipping",
     description:
-      "Our global shipping facility ensures efficient and reliable delivery of our silica products to customers worldwide. With a strong network of logistics partners, we guarantee timely and secure transportation, allowing us to reach markets across the globe. ",
+      "Our global shipping facility ensures efficient and reliable delivery of our silica products to customers worldwide. With a strong network of logistics partners, we guarantee timely and secure transportation, allowing us to reach markets across the globe. Experience seamless global shipping with our silica export services. ",
     detailedDescription:
       "Our expert team manages all aspects of shipping, from documentation to customs clearance, providing a hassle-free experience. Whether you need bulk shipments or specialized packaging, we offer flexible solutions tailored to your needs. Partner with us for reliable and convenient global shipping of your silica products.",
     IconComponent: PublicSharp,
@@ -35,7 +35,7 @@ const boxItems = [
   {
     title: "Trading consultancy",
     description:
-      "Our consultancy offers expert guidance and strategic advice to businesses looking to navigate the complexities trade. Whether you're entering new markets or seeking to streamline your trading processes, our consultancy services are designed to help you succeed in today's competitive economy.",
+      "Our consultancy offers expert guidance and strategic advice to businesses looking to navigate the complexities trade. Whether you're entering new markets or seeking to streamline your trading processes, our consultancy services are designed to help you succeed in today's competitive economy. We are committed to your success.",
     detailedDescription:
       "We offer personalized consultancy services designed to meet your specific investment goals and risk tolerance.Our consultancy services encompass a wide range of areas, including stock selection, portfolio diversification, risk management, and market analysis. We leverage cutting-edge tools and technologies to provide you with timely and actionable advice, helping you make informed decisions in today's fast-paced markets.",
     IconComponent: ShowChartSharp,
