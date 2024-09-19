@@ -91,12 +91,20 @@ function DrawerAppBar(props) {
           {/* Desktop Navigation logo */}
           <Box
             component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", sm: "block" },
+            }}
           >
             <img
-              src="./assets/logo.jpg"
+              src="./assets/logo.png"
               alt="Black Bird - Desktop"
-              style={{ height: 32, width: 130 }}
+              style={{
+                height: 32,
+                width: 130,
+                backgroundColor: "#fff",
+                borderRadius: "2px",
+              }}
             />
           </Box>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
