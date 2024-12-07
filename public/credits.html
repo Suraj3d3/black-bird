@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Credits Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+      }
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      section {
+        margin-bottom: 20px;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Thank You for the Resources!</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Images</h2>
+        <p>
+          Special thanks to the following sources for the images used in this
+          project:
+        </p>
+        <ul id="imageCredits"></ul>
+      </section>
+      <section>
+        <h2>Fonts</h2>
+        <p>
+          Special thanks to the following sources for the fonts used in this
+          project:
+        </p>
+        <ul id="fontCredits"></ul>
+      </section>
+    </main>
+    <footer></footer>
+    <script>
+      const imageCredits = [
+        {
+          text: "Photo by Andrea Piacquadio from Pexels",
+          url: "https://www.pexels.com/photo/woman-in-white-blazer-holding-tablet-computer-789822/",
+        },
+        {
+          text: "Map Image by rawpixel",
+          url: "https://www.rawpixel.com/image/6289589/png-public-domain-black",
+        },
+      ];
+
+      const fontCredits = [{ text: "Fonts", url: "https://fonts.google.com/" }];
+
+      const imageCreditsList = document.getElementById("imageCredits");
+      imageCredits.forEach((credit) => {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.textContent = credit.text;
+        a.href = credit.url;
+        a.target = "_blank"; // Open link in new tab
+        li.appendChild(a);
+        imageCreditsList.appendChild(li);
+      });
+
+      const fontCreditsList = document.getElementById("fontCredits");
+      fontCredits.forEach((credit) => {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.textContent = credit.text;
+        a.href = credit.url;
+        a.target = "_blank"; // Open link in new tab
+        li.appendChild(a);
+        fontCreditsList.appendChild(li);
+      });
+    </script>
+  </body>
+</html>

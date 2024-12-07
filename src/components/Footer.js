@@ -58,9 +58,14 @@ const Footer = () => {
             Black Bird
           </Typography> */}
           <img
-            src="./assets/logo.jpg"
+            src="./assets/logo.png"
             alt="Black Bird "
-            style={{ height: 45, width: 160 }}
+            style={{
+              height: 45,
+              width: 160,
+              backgroundColor: "#fff",
+              borderRadius: "2px",
+            }}
           />
           <Typography variant="body1" sx={{ marginBottom: "10px" }}>
             {/* <LocationOn sx={{ marginRight: "5px" }} /> */}
@@ -99,6 +104,7 @@ const Footer = () => {
               {item.title}
             </Link>
           ))}
+          {/* <Link href="/credits.html">Credits</Link> */}
         </Box>
         <Box
           sx={{

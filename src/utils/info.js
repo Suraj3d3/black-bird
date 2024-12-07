@@ -1,27 +1,28 @@
 const locationsInfo = [
   {
     officeType: "Head Office",
-    address: "Holding No:04, Cross Road No 17, Mango, Jamshedpur, 832110",
-    contact: "123-456-7890",
+    address:
+      "88, Caval Cross Lane No-2, 1st Floor, Dadiseth Agiyari Lane, Kalbadevi Road, Mumbai, 400002",
+    contact: "+91 8789371027",
   },
   {
     officeType: "Branch Office",
     address:
       "Ground Floor, D-9, Desk No 45, Noida, Sector 3, Noida, Gautambuddha Nagar, Uttar Pradesh, 201301",
-    contact: "123-456-7890",
+    contact: "+91 8789371027",
   },
 ];
 
 const contactUsInfo = {
   CONTACT_US_NAME: "Vinit Agarwal",
-  CONTACT_US_PHONE: "+91 8789371012",
-  CONTACT_US_EMAIL: "info@example.com",
+  CONTACT_US_PHONE: "+91 8789371027",
+  CONTACT_US_EMAIL: "vinit@blackbirdtrades.com",
 };
 
 const footerInfo = {
-  FOOTER_ADDRESS: "Holding No:04, Cross Road No 17, Mango, Jamshedpur, 832110",
-  FOOTER_EMAIL: "info@example.com",
-  FOOTER_PHONE: "+91 8789371012",
+  FOOTER_ADDRESS: locationsInfo[0].address,
+  FOOTER_EMAIL: "support@blackbirdtrades.com",
+  FOOTER_PHONE: locationsInfo[0].contact,
   FOOTER_FB: "#",
   FOOTER_INSTA: "#",
   FOOTER_TWITTER: "#",

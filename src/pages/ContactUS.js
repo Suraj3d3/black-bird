@@ -115,7 +115,7 @@ const ContactUS = () => {
                 </Typography>
               </Box>
               <Typography variant="body1" style={{ textAlign: "center" }}>
-                info@example.com
+                {contactUsInfo.CONTACT_US_EMAIL}
               </Typography>
             </Box>
             <div
