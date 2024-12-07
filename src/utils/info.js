@@ -1,3 +1,5 @@
+import { VideoCameraFront, Public } from "@mui/icons-material";
+
 const locationsInfo = [
   {
     officeType: "Head Office",
@@ -29,4 +31,20 @@ const footerInfo = {
   FOOTER_LINKEDIN: "#",
 };
 
-export { locationsInfo, contactUsInfo, footerInfo };
+const businessVenturesInfo = [
+  {
+    title: "The Blue Entertainment",
+    description:
+      "We produce feature films, short films, television series and documentaries across various genres. Visit our website to know more.",
+    icon: <VideoCameraFront fontSize="large" sx={{ color: "#2C3335" }} />,
+    link: "https://theblueentertainment.com/",
+  },
+  {
+    title: "The Blue International",
+    description: "Coming Soon...",
+    icon: <Public fontSize="large" sx={{ color: "#2C3335" }} />,
+    link: "https://theblueinternational.com/",
+  },
+];
+
+export { locationsInfo, contactUsInfo, footerInfo, businessVenturesInfo };
