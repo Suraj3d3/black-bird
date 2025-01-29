@@ -40,7 +40,7 @@ function DrawerAppBar(props) {
 
       {/* Mobile Navigation logo */}
       <img
-        src="./assets/logo.jpg"
+        src="./assets/logo-mobile.png"
         alt="Black Bird - Mobile"
         style={{ height: 35, width: 130 }}
       />
@@ -97,12 +97,12 @@ function DrawerAppBar(props) {
             }}
           >
             <img
-              src="./assets/logo.png"
+              src="./assets/logo-desktop.png"
               alt="Black Bird - Desktop"
               style={{
-                height: 32,
-                width: 130,
-                backgroundColor: "#fff",
+                height: 52,
+                width: 150,
+                // backgroundColor: "#fff",
                 borderRadius: "2px",
               }}
             />

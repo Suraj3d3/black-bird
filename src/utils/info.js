@@ -5,20 +5,20 @@ const locationsInfo = [
     officeType: "Head Office",
     address:
       "88, Caval Cross Lane No-2, 1st Floor, Dadiseth Agiyari Lane, Kalbadevi Road, Mumbai, 400002",
-    contact: "+91 8789371027",
+    contact: "1800-890-6718",
   },
   {
     officeType: "Branch Office",
     address:
       "Ground Floor, D-9, Desk No 45, Noida, Sector 3, Noida, Gautambuddha Nagar, Uttar Pradesh, 201301",
-    contact: "+91 8789371027",
+    contact: "1800-890-6718",
   },
 ];
 
 const contactUsInfo = {
   CONTACT_US_NAME: "Vinit Agarwal",
-  CONTACT_US_PHONE: "+91 8789371027",
-  CONTACT_US_EMAIL: "vinit@blackbirdtrades.com",
+  CONTACT_US_PHONE: "1800-890-6718",
+  CONTACT_US_EMAIL: "vinit.agarwal@blackbirdtrades.com",
 };
 
 const footerInfo = {
@@ -43,7 +43,7 @@ const businessVenturesInfo = [
     title: "The Blue International",
     description: "Coming Soon...",
     icon: <Public fontSize="large" sx={{ color: "#2C3335" }} />,
-    link: "https://theblueinternational.com/",
+    link: "#",
   },
 ];
 
