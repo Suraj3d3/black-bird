@@ -58,12 +58,12 @@ const Footer = () => {
             Black Bird
           </Typography> */}
           <img
-            src="./assets/logo.png"
+            src="./assets/logo-desktop.png"
             alt="Black Bird "
             style={{
               height: 45,
               width: 160,
-              backgroundColor: "#fff",
+              // backgroundColor: "#fff",
               borderRadius: "2px",
             }}
           />
